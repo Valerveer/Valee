@@ -1,0 +1,103 @@
+{
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: rgb(247, 204, 255); /* Modifique el color */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Container {
+    width: 1100px;
+    margin: 0px auto;
+    border: 1px solid black; /* Modifique el color */
+}
+
+header {
+    background: rgb(224, 178, 247); /* Modifique el color */
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+    color: rgb(54, 8, 63); /* Modifique el color */
+    border-bottom: 3px solid white; /* Modifique el color */
+}
+
+nav {
+    background: rgb(184, 122, 241); /* Modifique el color */
+    height: 50px;
+    border-bottom: 1px solid white; /* Modifique el color */
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#content {
+    float: left;
+    width: 65%; 
+    background: rgb(234, 190, 252); /* Modifique el color */
+    min-height: 470px;
+}
+
+aside {
+    float: left;
+    width: calc(30% - 30px); /* Ajuste la fórmula */
+    background: rgb(209, 151, 243); /* Modifique el color */
+    min-height: 532px;
+    padding: 10px;
+}
+
+.article {
+    color: rgb(32, 6, 61); /* Modifique el color */
+    margin-top: 15px;
+    border-bottom: 1px solid rgb(218, 132, 252); /* Modifique el color */
+}
+
+.article h2 {
+    font-size: 30px; /* Modifique el tamaño de la página */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    #Container {
+        width: 90%; /* Reduce el ancho del contenedor */
+    }
+
+    nav ul li {
+        float: none; /* Cambia a bloque */
+        text-align: center; /* Centra el texto */
+    }
+
+    #content {
+        width: 100%; /* El contenido ocupa todo el ancho */
+        float: none; /* Elimina el flotado */
+    }
+
+    aside {
+        width: 100%; /* El aside ocupa todo el ancho */
+        float: none; /* Elimina el flotado */
+        margin-top: 20px; /* Agrega margen superior */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: auto; /* Permite que el encabezado se ajuste */
+        line-height: normal; /* Ajusta la línea de altura */
+        padding: 10px; /* Agrega un poco de padding */
+    }
+
+    .article h2 {
+        font-size: 24px; /* Reduce el tamaño de la fuente */
+    }
+}
